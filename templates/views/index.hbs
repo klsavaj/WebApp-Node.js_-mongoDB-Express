@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MySite.com</title>
+</head>
+
+<body>
+    {{>navbar}}
+
+    {{!-- hero section --}}
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <div
+                        class="col-md-6 col-12 hero-text order-md-0 order-1 d-flex justify-content-center algn-items-start flex-column">
+                        <h1>Savaj Krunal</h1>
+                        <h1>જય શ્રી કૃષ્ણા</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga soluta facilis incidunt harum.
+                            Molestias, excepturi cupiditate voluptatibus dignissimos distinctio unde.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, repellendus
+                            totam cumque libero, omnis aut perspiciatis possimus modi voluptatum non et quae incidunt.
+                            <span class="bold-style">Join Us</span>
+                        </p>
+                        <button class="btn-style btn-primary">Go ahead</button>
+                    </div>
+
+                    {{!-- right img section --}}
+                    <div class="col-md-6 col-12 hero-text">
+                        <figure>
+                            <img src="images/growth.svg" alt="chal chal have" id="a">
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    {{!-- hero section end --}}
+
+    {{!-- about section --}}
+    {{>about}}
+    {{!-- about section end --}}
+
+    {{!-- our services section --}}
+    {{>services}}
+    {{!-- our services section end --}}
+
+    {{!-- maps section --}}
+    {{>maps}}
+    {{!-- maps section end --}}
+
+    {{!-- contact section --}}
+    {{>contact}}
+    {{!-- contact section end --}}
+
+    <footer class="footer">
+        <p>
+            copyright by krunal savaj
+        </p>
+    </footer>
+
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<div class="container-fluid mt-5 contact-style" id="contactid">
+    <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+            <h1 class="text-center main-heading">Register</h1>
+            <p class="text-center sub-heading">Contact Us and Enter your query Here</p>
+
+            <div class="row">
+                <div class="col-md-6 col12 mx-auto">
+
+                    <form action="/contact" method="POST">
+
+                        <div class="form-group">
+                            <label for="exampleInputname1" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="exampleInputname1" placeholder="name"
+                                name="name">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter your email addres" name="email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputphone1" class="form-label">Phone Number</label>
+                            <input type="number" class="form-control" id="exampleInputphone1" placeholder="Phone No."
+                                name="phone">
+                        </div>
+
+                         <div class="form-group">
+                            <label for="exampleInputmessage1" class="form-label">Message</label>
+                            <input type="text" class="form-control" id="exampleInputmessage1" placeholder="Message"
+                                name="message">
+                        </div>
+
+                            
+                        <button type="submit" class="btn-style btn-primary" onclick="alertFunction()">Submit</button>
+                        </foform-group </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+function alertFunction() {
+  alert("Hello! Your Query has been submitted successfully");
+}
+</script>
