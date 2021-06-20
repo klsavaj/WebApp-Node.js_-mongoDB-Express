@@ -196,9 +196,9 @@ app.post("/contact", async (req, res) => {
         // send mail with defined transport object............................................................................................//
 
         var mailoptions = {
-            from: 'jaymataji1552002@gmail.com', // sender address
+            from: 'serverTest@gmail.com', // sender address
             to: userData.email, // list of receivers
-            subject: "timepass", // Subject line
+            subject: "Backend", // Subject line
             text: `
             Your Entered Details:
 
@@ -206,9 +206,7 @@ app.post("/contact", async (req, res) => {
             Email: ${userData.email}
             Phone: ${userData.phone}
             Message: ${userData.message}
-
-            Savaj Company Note: જય શ્રી સ્વામિનારાયણ ,
-            મને 500 રૂપિયા ગૂગલ પે કરી દે
+            You can write your message here like the way you want
             `, // plain text body
 
         };
@@ -229,7 +227,7 @@ app.post("/contact", async (req, res) => {
 
 
 app.listen(port, () => {
-    console.log("hi there");
+    console.log("Server is coonected to port 9000");
 })
 
 
